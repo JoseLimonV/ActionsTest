@@ -10,8 +10,10 @@ jobs:
         run: |
           pwd
           ls
+      - name: Checkout
+        uses: actions/checkout@*
       - name: Simple JS Action
-        uses: actions/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@*
         with:
           who-to-greet: Jose
       - name: Log Greeting time
